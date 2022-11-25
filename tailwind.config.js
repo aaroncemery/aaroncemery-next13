@@ -15,10 +15,10 @@ module.exports = {
           500: '#00FF00',
         },
         blue: {
-          500: '#0000FF',
+          500: '#0025A7',
         },
         red: {
-          500: '#F40107',
+          500: '#CD3434',
         },
         purple: {
           500: '#9E00FF',
@@ -27,7 +27,7 @@ module.exports = {
           500: '#FFFF00',
         },
         orange: {
-          500: '#FFA500',
+          500: '#EAA236',
         },
       },
     },
@@ -43,5 +43,6 @@ module.exports = {
     'hover:text-orange-500',
     'hover:text-red-500',
     'hover:text-green-500',
+    'hover:text-white',
   ],
 }

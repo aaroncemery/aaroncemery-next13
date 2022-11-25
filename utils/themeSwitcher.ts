@@ -16,7 +16,7 @@ export const heroThemeColors = (color: string, type: string) => {
         case 'text':
           return 'text-white'
         case 'button':
-          return 'bg-white text-red-500 hover:bg-white'
+          return 'bg-white text-red-500 hover:text-white'
       }
     case 'purple-500':
       switch (type) {
