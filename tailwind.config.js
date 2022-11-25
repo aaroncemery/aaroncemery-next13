@@ -33,4 +33,15 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /(bg|text|border)-(purple|green|blue|red|yellow|orange)-500/,
+    },
+    'hover:bg-transparent',
+    'hover:text-blue-500',
+    'hover:text-yellow-500',
+    'hover:text-orange-500',
+    'hover:text-red-500',
+    'hover:text-green-500',
+  ],
 }

@@ -63,7 +63,7 @@ export const PageHero = ({
               className={`rounded-md py-3 px-10 font-mono ${heroThemeColors(
                 backgroundColor,
                 'button',
-              )}`}
+              )} border-2 hover:bg-transparent transition-all duration-300`}
             >
               inquire
             </button>
