@@ -29,7 +29,7 @@ export const pages: Item[] = [
           'Streaming data fetching from the server with React Suspense',
       },
       {
-        name: 'regarding',
+        name: 'regarding.',
         slug: 'regarding',
         description: 'Create top-level layouts that apply to all routes',
         isDisabled: true,

@@ -9,15 +9,13 @@ import { pages } from 'app/lib/globals'
 export default function Nav() {
   const { isOpen, toggle } = useMenuToggle()
 
-  useEffect(() => {
-    console.log(isOpen, 'isOpen')
-  }, [isOpen])
-
   return (
-    <nav className="bg-[#0032E3] py-4">
+    <nav className="py-4 fixed w-full">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <div className="text-white font-mono">bad_raccoon</div>
+          <Link href="/" className="text-white font-mono">
+            bad_raccoon
+          </Link>
           <ul
             className={`font-mono text-white flex gap-6 transition-all duration-300 ${
               !isOpen ? 'opacity-0 translate-x-8 pointer-events-none' : ''
@@ -27,7 +25,7 @@ export default function Nav() {
               <li key={page.name}>
                 <Link
                   href={'/' + page.slug}
-                  className="hover:text-[#52FF00] hover:underline transition-all duration-300"
+                  className="hover:text-green-500 hover:underline transition-all duration-300"
                 >
                   {page.name}
                 </Link>

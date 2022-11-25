@@ -6,7 +6,7 @@ interface MenuToggleTextProps {
 export const MenuToggle = ({ onClick, isOpen }: MenuToggleTextProps) => {
   return (
     <button
-      className="flex flex-col justify-around w-8 h-8 p-0 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#0032E3] focus:ring-white/40 rounded-md"
+      className="flex flex-col justify-around w-8 h-8 p-0 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-500 focus:ring-white/40 rounded-md"
       onClick={onClick}
     >
       <span
