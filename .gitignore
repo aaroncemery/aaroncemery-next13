@@ -37,6 +37,7 @@ next-env.d.ts
 
 # sanity
 /studio/node_modules/
+node_modules/
 
 # vscode
 .history/
