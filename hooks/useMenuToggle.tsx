@@ -5,5 +5,7 @@ export const useMenuToggle = () => {
 
   const toggle = () => setIsOpen(!isOpen)
 
+  console.log(isOpen)
+
   return { isOpen, toggle }
 }

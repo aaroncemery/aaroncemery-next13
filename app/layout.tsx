@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import Nav from 'components/ui/nav'
+import '@fontsource/jetbrains-mono'
 
 export default function RootLayout({
   children,

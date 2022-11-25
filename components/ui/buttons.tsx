@@ -1,14 +1,13 @@
-'use client'
+interface MenuToggleTextProps {
+  isOpen?: boolean
+  onClick: () => void
+}
 
-import { useMenuToggle } from 'hooks/useMenuToggle'
-
-export const MenuToggle = () => {
-  const { isOpen, toggle } = useMenuToggle()
-
+export const MenuToggle = ({ onClick, isOpen }: MenuToggleTextProps) => {
   return (
     <button
       className="flex flex-col justify-around w-8 h-8 p-0 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#0032E3] focus:ring-white/40 rounded-md"
-      onClick={toggle}
+      onClick={onClick}
     >
       <span
         className={`w-full h-[2px] bg-white rounded transition-all duration-300 ${

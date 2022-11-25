@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/jetbrains-mono': ^4.5.11
   '@types/node': 18.11.9
   '@types/react': 18.0.24
   '@types/react-dom': 18.0.8
@@ -13,6 +14,7 @@ specifiers:
   typescript: 4.8.4
 
 dependencies:
+  '@fontsource/jetbrains-mono': 4.5.11
   '@types/node': 18.11.9
   '@types/react': 18.0.24
   '@types/react-dom': 18.0.8
@@ -27,6 +29,10 @@ devDependencies:
   tailwindcss: 3.2.1_postcss@8.4.18
 
 packages:
+
+  /@fontsource/jetbrains-mono/4.5.11:
+    resolution: {integrity: sha512-IW1qgWGkjlN1O6Jf+6LWF9DpcdXhyQEXhTlzfVKrWHX+ProuOT5FcrEAj34AR+19CgAb9Sheda2slORnybBsdw==}
+    dev: false
 
   /@next/env/13.0.1:
     resolution: {integrity: sha512-gK60YoFae3s8qi5UgIzbvxOhsh5gKyEaiKH5+kLBUYXLlrPyWJR2xKBj2WqvHkO7wDX7/Hed3DAqjSpU4ijIvQ==}
