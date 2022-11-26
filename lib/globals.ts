@@ -4,6 +4,9 @@ type Item = {
     name: string
     slug: string
     description?: string
+    titleOne?: string
+    titleTwo?: string
+    backgroundColor?: string
     isDisabled?: boolean
   }[]
 }
@@ -16,17 +19,34 @@ export const pages: Item[] = [
         name: 'design.',
         slug: 'design',
         description: 'Stuff about me',
+        titleOne: 'be.',
+        titleTwo: 'different.',
+        backgroundColor: 'purple-500',
+      },
+      {
+        name: 'designs.',
+        slug: 'designs',
+        description: 'Stuff about me',
+        titleOne: 'be.',
+        titleTwo: 'testing...',
+        backgroundColor: 'purple-500',
       },
       {
         name: 'code.',
         slug: 'code',
         description: 'Organize routes without affecting URL paths',
+        titleOne: 'be.',
+        titleTwo: 'smart.',
+        backgroundColor: 'orange-500',
       },
       {
         name: 'write.',
         slug: 'write',
         description:
           'Streaming data fetching from the server with React Suspense',
+        titleOne: 'be.',
+        titleTwo: 'heard.',
+        backgroundColor: 'red-500',
       },
       {
         name: 'regarding.',

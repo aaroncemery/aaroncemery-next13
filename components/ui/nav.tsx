@@ -3,8 +3,7 @@
 import { MenuToggle } from './buttons'
 import Link from 'next/link'
 import { useMenuToggle } from 'hooks/useMenuToggle'
-import { useEffect } from 'react'
-import { pages } from 'app/lib/globals'
+import { pages } from 'lib/globals'
 
 export default function Nav() {
   const { isOpen, toggle } = useMenuToggle()
