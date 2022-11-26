@@ -1,22 +1,30 @@
-import Nav from 'components/ui/nav'
 import { GetStaticProps } from 'next'
+import { NextSeo } from 'next-seo'
 import { PageHero } from 'components/sections/hero'
-import { pages } from 'lib/globals'
 import { ParsedUrlQuery } from 'querystring'
+import { pages } from 'lib/globals'
+import Nav from 'components/ui/nav'
 
 interface PageProps {
+  description: string
   titleOne: string
   titleTwo: string
   backgroundColor: 'blue-500' | 'red-500' | 'purple-500' | 'orange-500'
 }
 
 export default function Page({
+  description,
   titleOne,
   titleTwo,
   backgroundColor,
 }: PageProps) {
   return (
     <>
+      <NextSeo
+        title={titleOne + ' ' + titleTwo}
+        description={description}
+        titleTemplate="%s | bad_raccoon"
+      />
       <Nav />
       <div className="space-y-6">
         <PageHero
@@ -50,6 +58,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
+      desctiption: pageData ? pageData.description : '',
       titleOne: pageData ? pageData.titleOne : 'be.',
       titleTwo: pageData ? pageData.titleTwo : 'visible.',
       backgroundColor: pageData ? pageData.backgroundColor : 'blue-500',

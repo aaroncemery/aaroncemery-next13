@@ -1,9 +1,9 @@
 'use client'
 
 import { MenuToggle } from './buttons'
-import Link from 'next/link'
-import { useMenuToggle } from 'hooks/useMenuToggle'
 import { pages } from 'lib/globals'
+import { useMenuToggle } from 'hooks/useMenuToggle'
+import Link from 'next/link'
 
 export default function Nav() {
   const { isOpen, toggle } = useMenuToggle()

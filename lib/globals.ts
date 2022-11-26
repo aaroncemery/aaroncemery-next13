@@ -24,14 +24,6 @@ export const pages: Item[] = [
         backgroundColor: 'purple-500',
       },
       {
-        name: 'designs.',
-        slug: 'designs',
-        description: 'Stuff about me',
-        titleOne: 'be.',
-        titleTwo: 'testing...',
-        backgroundColor: 'purple-500',
-      },
-      {
         name: 'code.',
         slug: 'code',
         description: 'Organize routes without affecting URL paths',
@@ -48,12 +40,12 @@ export const pages: Item[] = [
         titleTwo: 'heard.',
         backgroundColor: 'red-500',
       },
-      {
-        name: 'regarding.',
-        slug: 'regarding',
-        description: 'Create top-level layouts that apply to all routes',
-        isDisabled: true,
-      },
+      // {
+      //   name: 'regarding.',
+      //   slug: 'regarding',
+      //   description: 'Create top-level layouts that apply to all routes',
+      //   isDisabled: true,
+      // },
     ],
   },
 ]
