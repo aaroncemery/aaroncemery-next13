@@ -1,8 +1,8 @@
-import { MainHero } from 'components/sections/hero'
 import Nav from 'components/ui/nav'
 import { GetStaticProps } from 'next'
 import { PageHero } from 'components/sections/hero'
 import { pages } from 'lib/globals'
+import { ParsedUrlQuery } from 'querystring'
 
 interface PageProps {
   titleOne: string
@@ -29,6 +29,10 @@ export default function Page({
   )
 }
 
+interface IParams extends ParsedUrlQuery {
+  page: string
+}
+
 export const getStaticPaths = async () => {
   const paths = pages[0].items.map((page) => ({
     params: { page: page.slug },
@@ -40,7 +44,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const { page } = context.params!
+  const { page } = context.params as IParams
 
   const pageData = pages[0].items.find((item) => item.slug === page)
 
